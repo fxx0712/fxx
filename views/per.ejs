@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+    <style type="text/css">
+        td{
+            list-style-type: none;
+            float: left;
+            padding: 20px;
+        }
+        a{
+         text-decoration: none;
+     }
+       </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div class="center">
+                <form action="/per" method="post">
+                <div class="center_text">
+                     <span>姓名:</span>
+                     <input type="search" placeholder="请输入">
+                     <span>性别:</span>
+                     <input type="search" class="queryInput" list="A1" placeholder=" 请输选择">
+                     <datalist id="A1">
+                        <option>男</option>
+                        <option>女</option>
+                    </datalist> 
+                     <span>电话:</span>
+                     <input type="search" class="queryInput" list="A2" placeholder=" 请输入">
+                     </datalist>
+                     <tr><button class="c" id="queryButton" onclick="queryButton()">查询</button></tr>
+                     <span id="clear_div"><a href="#" id="click_clear">清空</a></span>
+                </div>
+                <div>
+                    <ul class="A">
+                        <a href="/2">+添加</a>
+                    </ul>
+                </div>
+                 <div class="b2">
+                    <table border="1" class="b1" cellspacing="0" cellpadding="8">
+                        <tbody class="2">
+                            <% for(var i=0, max=users.length; i < max; i++) {%>
+                                <tr>
+                                    <td><%= users[i].id %></td>
+                                    <td><%= users[i].name %></td>
+                                    <td><%= users[i].password %></td>
+                                    <td><%= users[i].telephone %></td>
+                                    <td><%= users[i].email %></td>
+                                    <td><%= users[i].sex %></td>
+                                    <td><%= users[i].love %></td>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/pers.js"></script>
+</body>
+</html>

@@ -8,41 +8,35 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/register.css" />
 </head>
 <body>
+    <div>
+        <img src="/img/wheel-1000.jpg">
+    </div>
     <div class="aaa">
         <form action="/register" method="post">
-            <h1 style="color:rgb(118, 118, 201);">个人中心</h1>
+            <h1 style="color:rgb(28, 62, 65);">个人中心</h1>
             <input type="text" name="name" pattern="^[a-zA-Z]\w{5,17}$" placeholder="用户名">
             <br/>
             <input type="password" pattern="^^[a-zA-Z]\w{5,17}$" name="password" placeholder="密码"/>
             <br/>
-            <input type="ture" name="password" placeholder="确认密码"/>
+            <input type="ture" name="passwords" placeholder="确认密码"/>
             <br>
-            <input type="telephone" pattern="^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$" placeholder="手机号"/>
+            <input type="telephone" name="phone" pattern="^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$" placeholder="手机号"/>
             <br/>
-            <input type="email" pattern= "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="邮箱"/>
+            <input type="email" name="email" pattern= "^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="邮箱"/>
             <br/>
             <div >
-                <input type="sex" list="sexlist" name="" placeholder="性别">
+                <input type="sex" list="sexlist" name="sex" placeholder="性别">
                 <datalist id="sexlist">
                 <option>男</option>
                 <option>女</option>
             </datalist>
             </div>
             <br/>
-            <div >
-                <input type="class" list="classlist" name="" placeholder="班级">
-                <datalist id="classlist">
-                <option>一班</option>
-                <option>二班</option>
-                <option>三班</option>
-            </datalist>
-            </div>
-            <br/>
-            <input type="love" placeholder="爱好"/>
+            <input type="love" name="like" placeholder="爱好"/>
             <br/>
             <input type="submit" value="注册"/>
             <input type="submit" value="已有账号"/>
-
+            <p><a href="/per">后台管理</a></p>
         </form>
     </div>
 </body>

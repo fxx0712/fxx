@@ -1,20 +1,20 @@
 body{
   background-size: 100%;
   background-repeat: no-repeat;
-  background: #d3dcdf9c
+  background: #aad0dd9c
 }
 
 .aaa{
-  width: 338px;
-  height: 685px;
+  width: 300px;
+  height: 650px;
   padding: 13px;
   position: absolute;
-  left: 50%;
+  left: 90%;
   top: 28%;
   margin-left: -200px;
   margin-top: -200px;
 
-  background-color:rgb(174, 210, 245);
+  background-color:rgb(239, 242, 245);
   border-radius: 10px;
   text-align: center;
 }
@@ -31,11 +31,11 @@ body{
   display: block;
   margin: -3px auto;
   text-align: center;
-  border: 2px solid #f0eee9;
+  border: 2px solid #1b1b1a;
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: rgb(247, 184, 184);
+  color: rgb(247, 184, 210);
   border-radius: 24px;
   transition: 0.25s;
 }
@@ -44,11 +44,11 @@ body{
   background: none;
   margin: -3px auto;
   text-align: center;
-  border: 2px solid rgb(126, 176, 250);
+  border: 2px solid rgb(8, 8, 8);
   padding: 14px 10px;
   width: 100px;
   outline: none;
-  color: rgb(211, 233, 170);
+  color: rgb(26, 137, 165);
   border-radius: 24px;
   transition: 0.25s;
 }
